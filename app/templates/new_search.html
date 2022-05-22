@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+<!-- Main Content Block -->
+{% block content %}
+<!-- Add Content here -->
+
+<div class="row justify-content-center">
+  <h2>{{ search | title}}</h2>
+</div>
+<div class="row">
+  <div class="row justify-content-center">
+    {% for post in final_postings %}
+
+    <div class="card m-2" style="width: 18rem;">
+      <img src="{{post.post_img_url }}" class="card-img-top" alt="..." />
+      <div class="card-body" style="height: auto;">
+        <h5 class="card-title">{{ post.post_title }}</h5>
+        <p class="card-text"></p>
+        <a href="{{post.post_url}}" class="btn btn-primary rounded-pill">Learn More</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- Add content above this line -->
+{% endblock content %}
