@@ -25,8 +25,9 @@ SECRET_KEY = "django-insecure-f45uj5_d+*6(^1e=i0-j_ifivg=t4n$+@rn+)ix*wkdrd!ewrd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localhost","0.0.0.0", "127.0.0.1", "listat.ob88.dev"]
 
+CSRF_TRUSTED_ORIGINS = ["http://listat.ob88.dev", "https://listat.ob88.dev"]
 
 # Application definition
 
@@ -118,7 +119,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = BASE_DIR + "static/"
 STATICFILES_DIRS = [
     BASE_DIR + "/static",
 ]
