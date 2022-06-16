@@ -51,12 +51,12 @@ server {
     listen 80;
     server_name SERVER_NAME;
     
-    location /static/ {
-        alias /path/to/project/static/;
-    }
-    
     loaction / {
         proxy_pass http://SERVER_NAME:8000/;
+    }
+
+    location /static/ {
+        alias /path/to/project/static/;
     }
 }
 ```
