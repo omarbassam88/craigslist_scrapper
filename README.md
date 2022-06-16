@@ -2,6 +2,7 @@
 
 A simple Web scrapper for Craig's List website created with python using Django Framework.
 
+![desktop screenshot](./screenshots/screenshot-desktop.png)
 ## Libraries and Tools used
 
 - Django
@@ -20,12 +21,13 @@ A simple Web scrapper for Craig's List website created with python using Django 
 
 ```sh
 python -m venv env
-env/bin/activate
+source env/bin/activate
 pip install -r requirements.txt
 ```
 
 ### starting the server
 
 ```sh
+
 python manage.py runserver
 ```

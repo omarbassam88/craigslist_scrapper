@@ -37,17 +37,12 @@
               >Home <span class="sr-only">(current)</span></a
             >
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/"
-              >About <span class="sr-only">(current)</span></a
-            >
-          </li>
         </ul>
       </div>
     </nav>
 
     <div class="jumbotron">
-      <h1 class="display-3 text-center">What are you searching for today?</h1>
+      <h1 class="text-center">What are you searching for today?</h1>
 
       <!-- Search Bar -->
       
@@ -60,7 +55,7 @@
         {% csrf_token %}
         <div class="row m-4"></div>
         <input
-        class="form-control col-4 col-m-12 rounded-pill m-3"
+        class="form-control col-4 col-m-4 rounded-pill m-3"
         type="text"
         name="search"
         placeholder="Search"
